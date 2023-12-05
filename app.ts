@@ -38,7 +38,13 @@ function clock(){
         h = 12;
     }
     //// Determine whether it is AM or PM based on the value of 'h'
-    let ampm=h<=12 ? "AM" :"PM"
+    let ampm;
+
+    if (h>12){
+        ampm="AM";
+    }else {
+        ampm="PM"
+    }
 
     // Add leading zero to h,m,s if it is less than 10
     h=h<10 ? "0" +h :h;
@@ -50,6 +56,7 @@ function clock(){
     min.innerHTML =m;
     sec.innerHTML =s;
     period.innerHTML=ampm;
+
     day.innerHTML=days[d];
     date.innerHTML=months[todayMonth] + " | "+todayDate+" | "+todayYear;
 }
