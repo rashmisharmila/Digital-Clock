@@ -9,3 +9,5 @@ Real-time Clock & Date
 - HTML
 - CSS
 - TypeScript
+
+<a href=" https://rashmisharmila.github.io/Digital-Clock/" target="_blank">Check it out here⌚</a>
